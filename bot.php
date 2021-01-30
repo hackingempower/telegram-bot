@@ -325,7 +325,7 @@ Checked By @$username ");
     
 //Send Messages with Markdown (Global)
       function send_MDmessage($chat_id, $message){
-       $apiToken =  "API_TOKEN";
+       $apiToken =  "1672319844:AAFkzUJ9tVu2lBKaxXBKJkECHUiCzE_ZTbo";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$chat_id&text=$text&parse_mode=Markdown");
     }
@@ -333,13 +333,13 @@ Checked By @$username ");
 
 ///Send Message to Channel
       function send_Cmessage($channel_id, $message){
-       $apiToken =  "API_TOKEN";
+       $apiToken =  "1672319844:AAFkzUJ9tVu2lBKaxXBKJkECHUiCzE_ZTbo";
         $text = urlencode($message);
         file_get_contents("https://api.telegram.org/bot$apiToken/sendMessage?chat_id=$channel_id&text=$text");
     }
 
  function sendDice($chat_id, $message){
-       $apiToken =  "API_TOKEN";
+       $apiToken =  "1672319844:AAFkzUJ9tVu2lBKaxXBKJkECHUiCzE_ZTbo";
         file_get_contents("https://api.telegram.org/bot$apiToken/sendDice?chat_id=$chat_id&emoji=$message");
     }
 ?>
